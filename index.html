@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <h2>Vertical (basic) form</h2>
+      <form action="https://en.wikipedia.org/wiki/Try_Again_(Aaliyah_song)">
+        <div class="form-group">
+          <label for="text">Text:</label>
+          <input onchange="textCount(this)" type="text" class="form-control" id="text" placeholder="Enter text" name="text">
+          <div id="textcountnum"></div>
+        </div>
+        <div class="form-group">
+          <label for="textarea">Textarea:</label>
+          <input onchange="textAreaCount(this)" type="textarea" class="form-control" id="textarea" placeholder="Enter text" name="textarea">
+          <div id="textareacountnum"></div>
+        </div>
+        <div class="form-group">
+          <label for="pwd">Password:</label>
+          <input onchange="passwordCount(this)" type="password" class="form-control" id="pwd1" placeholder="Enter password">
+          <div id="passwordcountnum"></div>
+        </div>
+        <div class="form-group">
+          <label for="pwd">Password Confirmation:</label>
+          <input onchange="passwordConfirmationCount(this); passwordMatch()" type="password" class="form-control" id="pwd2" placeholder="Enter password again">
+          <div id="passwordconfirmationcountnum"></div>
+          <div id="passwordmatchconfirmation"></div>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" name="remember"> Remember me</label>
+        </div>
+        <button onclick="submitCheck()" class="btn btn-default" id="submitthis">Submit</button>
+      </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
