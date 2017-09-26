@@ -1,3 +1,5 @@
+$document.ready(
+  
 function textCount(val) {
   var length = val.value.length
   console.log(length);
@@ -58,3 +60,4 @@ function submitCheck() {
   }
   //}
 }
+)
