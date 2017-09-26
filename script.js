@@ -52,7 +52,7 @@ function submitCheck() {
     ($('#text')[0].value.length > 3) &&
     ($('#text')[0].value.length < 33) &&
     ($('#textarea')[0].value.length > 3) &&
-    ($('#textarea')[0].value.length < 141) &&
+    ($('#textarea')[0].value.length < 141) 
   ) {
     $('form').attr('action','https://en.wikipedia.org/wiki/Success_(magazine)')
   }
